@@ -13,6 +13,8 @@
 		59480E302BAB34750063D4DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59480E2F2BAB34750063D4DD /* Preview Assets.xcassets */; };
 		59480E392BAB39060063D4DD /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59480E382BAB39060063D4DD /* Technology.swift */; };
 		59480E3B2BAB44B80063D4DD /* Ext + color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59480E3A2BAB44B80063D4DD /* Ext + color.swift */; };
+		59E1E6132BAC931B000FDF1D /* TechnologyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */; };
+		59E1E6152BAC956E000FDF1D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		59480E2F2BAB34750063D4DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59480E382BAB39060063D4DD /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		59480E3A2BAB44B80063D4DD /* Ext + color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext + color.swift"; sourceTree = "<group>"; };
+		59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyDetailView.swift; sourceTree = "<group>"; };
+		59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				59480E2E2BAB34750063D4DD /* Preview Content */,
 				59480E382BAB39060063D4DD /* Technology.swift */,
 				59480E3A2BAB44B80063D4DD /* Ext + color.swift */,
+				59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */,
+				59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */,
 			);
 			path = Technologies;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				59480E2B2BAB34730063D4DD /* TechnologiesGridView.swift in Sources */,
+				59E1E6132BAC931B000FDF1D /* TechnologyDetailView.swift in Sources */,
 				59480E392BAB39060063D4DD /* Technology.swift in Sources */,
+				59E1E6152BAC956E000FDF1D /* ButtonStyle.swift in Sources */,
 				59480E292BAB34730063D4DD /* TechnologiesApp.swift in Sources */,
 				59480E3B2BAB44B80063D4DD /* Ext + color.swift in Sources */,
 			);
