@@ -9,14 +9,17 @@ import SwiftUI
 
 struct TechnologyDetailView: View {
     var technology: Technology
+    @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
     
     var body: some View {
         VStack {
+            
             // MARK: - Add the dismiss button
             HStack {
                 Spacer()
                 Button {
-                    
+                    isShowingDetailView.toggle()
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(.bg)
@@ -25,10 +28,12 @@ struct TechnologyDetailView: View {
                     
                 }
             }
+            .padding([.trailing, .top], 20)
             
             Spacer()
             
             TechnologyTitleView(technology: technology)
+            
             DividerView()
             
             // MARK: - Add description for technology
@@ -39,20 +44,20 @@ struct TechnologyDetailView: View {
             }
             
             DividerView()
+            
             Spacer()
             
             // MARK: - Add the "Learn More" button
             Button {
-                
+                isShowingSafariView = true
             } label: {
                 ButtonStyle(title: "Learn More")
             }
         }
+        .sheet(isPresented: $isShowingSafariView, content: {
+            SafariView(url: URL(string: technology.urlString) ?? URL(string: "https://developer.apple.com/design/human-interface-guidelines")!)
+        })
     }
-}
-
-#Preview {
-    TechnologyDetailView(technology: MockData.sampleTechnology)
 }
 
 struct DividerView: View {
@@ -61,4 +66,8 @@ struct DividerView: View {
             .background(.bg)
             .padding()
     }
+}
+
+#Preview {
+    TechnologyDetailView(technology: MockData.sampleTechnology, isShowingDetailView: .constant(false))
 }

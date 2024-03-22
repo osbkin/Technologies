@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TechnologiesGridView: View {
+    
+    @StateObject var viewModel = TechnologiesGridViewModel()
+    
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())
@@ -20,12 +23,16 @@ struct TechnologiesGridView: View {
                     ForEach(MockData.technologies) { technology in
                         TechnologyTitleView(technology: technology)
                             .onTapGesture {
-                                
+                                viewModel.selectedTechnology = technology
                             }
                     }
                 }
             }
             .navigationTitle("Technologies")
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                TechnologyDetailView(technology: viewModel.selectedTechnology ?? MockData.sampleTechnology, 
+                                     isShowingDetailView: $viewModel.isShowingDetailView)
+            }
         }
     }
 }

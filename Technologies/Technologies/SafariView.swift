@@ -1,0 +1,20 @@
+//
+//  SafariView.swift
+//  Technologies
+//
+//  Created by Olha Kostenko on 2024-03-22.
+//
+
+import SwiftUI
+import SafariServices
+
+struct SafariView: UIViewControllerRepresentable {
+    
+    let url: URL
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController {
+        SFSafariViewController(url: url)
+    }
+    
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {}
+}
