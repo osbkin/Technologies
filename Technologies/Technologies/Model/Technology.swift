@@ -16,6 +16,10 @@ struct Technology: Hashable, Identifiable {
 }
 
 struct MockData {
+    static let sampleTechnology = Technology(name: "AirPlay",
+                                             imageName: "airplayvideo",
+                                             urlString: "https://developer.apple.com/design/human-interface-guidelines/airplay",
+                                             description: "AirPlay technology simplifies the process of streaming audio, video, and photos wirelessly from Apple devices to compatible accessories, offering unparalleled convenience. It eliminates the need for physical connections, providing users with a seamless and clutter-free experience. With AirPlay, users can easily share content to larger screens or speakers, enhancing entertainment options and facilitating collaboration. Additionally, AirPlay fosters integration within the Apple ecosystem, allowing for seamless communication between different devices and accessories. Its support for multi-room audio playback and screen mirroring further enhances its versatility, making AirPlay a valuable tool for both personal and professional use cases.")
     static let technologies = [
     Technology(name: "AirPlay",
                imageName: "airplayvideo",
