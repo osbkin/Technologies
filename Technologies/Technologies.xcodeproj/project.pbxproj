@@ -13,8 +13,10 @@
 		59480E302BAB34750063D4DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59480E2F2BAB34750063D4DD /* Preview Assets.xcassets */; };
 		59480E392BAB39060063D4DD /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59480E382BAB39060063D4DD /* Technology.swift */; };
 		59480E3B2BAB44B80063D4DD /* Ext + color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59480E3A2BAB44B80063D4DD /* Ext + color.swift */; };
+		597F9F482BAE018200741611 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F9F472BAE018200741611 /* XDismissButton.swift */; };
 		59E17FC52BADEFD3001C29A9 /* TechnologiesGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E17FC42BADEFD3001C29A9 /* TechnologiesGridViewModel.swift */; };
 		59E17FC72BADF455001C29A9 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E17FC62BADF455001C29A9 /* SafariView.swift */; };
+		59E17FC92BADF72F001C29A9 /* TechnologyTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E17FC82BADF72F001C29A9 /* TechnologyTitleView.swift */; };
 		59E1E6132BAC931B000FDF1D /* TechnologyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */; };
 		59E1E6152BAC956E000FDF1D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
@@ -27,8 +29,10 @@
 		59480E2F2BAB34750063D4DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59480E382BAB39060063D4DD /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		59480E3A2BAB44B80063D4DD /* Ext + color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext + color.swift"; sourceTree = "<group>"; };
+		597F9F472BAE018200741611 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		59E17FC42BADEFD3001C29A9 /* TechnologiesGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologiesGridViewModel.swift; sourceTree = "<group>"; };
 		59E17FC62BADF455001C29A9 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		59E17FC82BADF72F001C29A9 /* TechnologyTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyTitleView.swift; sourceTree = "<group>"; };
 		59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyDetailView.swift; sourceTree = "<group>"; };
 		59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,16 +67,14 @@
 		59480E272BAB34730063D4DD /* Technologies */ = {
 			isa = PBXGroup;
 			children = (
+				59E17FCE2BADF8E0001C29A9 /* Screens */,
+				59E17FD02BADF922001C29A9 /* Model */,
+				59E17FD12BADF92B001C29A9 /* Views */,
+				59E17FD42BADF993001C29A9 /* UIKitComponents */,
+				59E17FD52BADF9B3001C29A9 /* Utils */,
 				59480E282BAB34730063D4DD /* TechnologiesApp.swift */,
-				59480E2A2BAB34730063D4DD /* TechnologiesGridView.swift */,
 				59480E2C2BAB34750063D4DD /* Assets.xcassets */,
 				59480E2E2BAB34750063D4DD /* Preview Content */,
-				59480E382BAB39060063D4DD /* Technology.swift */,
-				59480E3A2BAB44B80063D4DD /* Ext + color.swift */,
-				59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */,
-				59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */,
-				59E17FC42BADEFD3001C29A9 /* TechnologiesGridViewModel.swift */,
-				59E17FC62BADF455001C29A9 /* SafariView.swift */,
 			);
 			path = Technologies;
 			sourceTree = "<group>";
@@ -83,6 +85,82 @@
 				59480E2F2BAB34750063D4DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59E17FCC2BADF8BC001C29A9 /* TechnologyGridView */ = {
+			isa = PBXGroup;
+			children = (
+				59480E2A2BAB34730063D4DD /* TechnologiesGridView.swift */,
+				59E17FC42BADEFD3001C29A9 /* TechnologiesGridViewModel.swift */,
+			);
+			path = TechnologyGridView;
+			sourceTree = "<group>";
+		};
+		59E17FCE2BADF8E0001C29A9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				59E17FCF2BADF903001C29A9 /* TechnologyDetailView */,
+				59E17FCC2BADF8BC001C29A9 /* TechnologyGridView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		59E17FCF2BADF903001C29A9 /* TechnologyDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				59E1E6122BAC931B000FDF1D /* TechnologyDetailView.swift */,
+			);
+			path = TechnologyDetailView;
+			sourceTree = "<group>";
+		};
+		59E17FD02BADF922001C29A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59480E382BAB39060063D4DD /* Technology.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59E17FD12BADF92B001C29A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59E17FD32BADF955001C29A9 /* View */,
+				59E17FD22BADF938001C29A9 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59E17FD22BADF938001C29A9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				59E1E6142BAC956E000FDF1D /* ButtonStyle.swift */,
+				597F9F472BAE018200741611 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		59E17FD32BADF955001C29A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59E17FC82BADF72F001C29A9 /* TechnologyTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59E17FD42BADF993001C29A9 /* UIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				59E17FC62BADF455001C29A9 /* SafariView.swift */,
+			);
+			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		59E17FD52BADF9B3001C29A9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				59480E3A2BAB44B80063D4DD /* Ext + color.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +237,12 @@
 				59E1E6132BAC931B000FDF1D /* TechnologyDetailView.swift in Sources */,
 				59480E392BAB39060063D4DD /* Technology.swift in Sources */,
 				59E1E6152BAC956E000FDF1D /* ButtonStyle.swift in Sources */,
+				59E17FC92BADF72F001C29A9 /* TechnologyTitleView.swift in Sources */,
 				59E17FC72BADF455001C29A9 /* SafariView.swift in Sources */,
 				59E17FC52BADEFD3001C29A9 /* TechnologiesGridViewModel.swift in Sources */,
 				59480E292BAB34730063D4DD /* TechnologiesApp.swift in Sources */,
 				59480E3B2BAB44B80063D4DD /* Ext + color.swift in Sources */,
+				597F9F482BAE018200741611 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

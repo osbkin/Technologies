@@ -16,19 +16,7 @@ struct TechnologyDetailView: View {
         VStack {
             
             // MARK: - Add the dismiss button
-            HStack {
-                Spacer()
-                Button {
-                    isShowingDetailView.toggle()
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(.bg)
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                    
-                }
-            }
-            .padding([.trailing, .top], 20)
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
             
             Spacer()
             
@@ -54,7 +42,7 @@ struct TechnologyDetailView: View {
                 ButtonStyle(title: "Learn More")
             }
         }
-        .sheet(isPresented: $isShowingSafariView, content: {
+        .fullScreenCover(isPresented: $isShowingSafariView, content: {
             SafariView(url: URL(string: technology.urlString) ?? URL(string: "https://developer.apple.com/design/human-interface-guidelines")!)
         })
     }
