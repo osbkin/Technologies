@@ -12,14 +12,36 @@ struct TechnologyDetailView: View {
     
     var body: some View {
         VStack {
+            // MARK: - Add the dismiss button
+            HStack {
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(.bg)
+                        .imageScale(.large)
+                        .frame(width: 44, height: 44)
+                    
+                }
+            }
+            
             Spacer()
             
             TechnologyTitleView(technology: technology)
-            Text(technology.description)
-                .font(.body)
-                .padding()
+            DividerView()
             
+            // MARK: - Add description for technology
+            ScrollView(.vertical) {
+                Text(technology.description)
+                    .font(.body)
+                    .padding()
+            }
+            
+            DividerView()
             Spacer()
+            
+            // MARK: - Add the "Learn More" button
             Button {
                 
             } label: {
@@ -31,4 +53,12 @@ struct TechnologyDetailView: View {
 
 #Preview {
     TechnologyDetailView(technology: MockData.sampleTechnology)
+}
+
+struct DividerView: View {
+    var body: some View {
+        Divider()
+            .background(.bg)
+            .padding()
+    }
 }

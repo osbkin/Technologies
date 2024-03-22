@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ButtonStyle: View {
     var title: String
+    
     var body: some View {
         Text(title)
             .font(.title2)
             .fontWeight(.semibold)
             .frame(width: 280, height: 50)
-            .background(.purple2)
-            .foregroundColor(.textColor)
+            .background(.bg, in: .capsule)
+            .foregroundColor(.textColor2)
             .cornerRadius(10)
     }
 }

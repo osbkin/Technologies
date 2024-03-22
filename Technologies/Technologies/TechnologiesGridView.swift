@@ -19,6 +19,9 @@ struct TechnologiesGridView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.technologies) { technology in
                         TechnologyTitleView(technology: technology)
+                            .onTapGesture {
+                                
+                            }
                     }
                 }
             }
