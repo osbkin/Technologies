@@ -17,12 +17,15 @@ Welcome to the Technologies app! It's your handy tool for diving into Apple's am
 ## Screenshots 
 Are you ready to dive deep into Apple's technology world? It's perfect for anyone who wants to learn more about the amazing tech Apple offers. Let's start exploring!
 
-Dark Mode
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 06 57](https://github.com/osbkin/Technologies/assets/94690103/7fe16418-c81d-4dd4-881b-63d781565fa6)
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 06 50](https://github.com/osbkin/Technologies/assets/94690103/9bb66db2-3735-437d-bde1-7ee17937d170)
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 06 42](https://github.com/osbkin/Technologies/assets/94690103/a8930345-a718-4324-b6ca-fe872ee7c45b)
+|Dark Mode      | Light Mode|
+| ------------- | ------------- |
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 06 42](https://github.com/osbkin/Technologies/assets/94690103/a8930345-a718-4324-b6ca-fe872ee7c45b) |![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 09 12](https://github.com/osbkin/Technologies/assets/94690103/cd5b62f3-1403-4ba3-8121-664e099be0c5)  |
+| ------------- | ------------- |
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 06 50](https://github.com/osbkin/Technologies/assets/94690103/9bb66db2-3735-437d-bde1-7ee17937d170) |![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 09 18](https://github.com/osbkin/Technologies/assets/94690103/7dfb0f59-05d7-4fca-b06d-0427c971ec5c) |
+| ------------- | ------------- |
+|![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 06 57](https://github.com/osbkin/Technologies/assets/94690103/7fe16418-c81d-4dd4-881b-63d781565fa6)|![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 09 23](https://github.com/osbkin/Technologies/assets/94690103/5f21e88c-a6b7-463a-b251-5412219e3f2f) |
 
-Light Mode
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 09 12](https://github.com/osbkin/Technologies/assets/94690103/cd5b62f3-1403-4ba3-8121-664e099be0c5)
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 09 18](https://github.com/osbkin/Technologies/assets/94690103/7dfb0f59-05d7-4fca-b06d-0427c971ec5c)
-![Simulator Screenshot - iPhone 15 Pro - 2024-04-01 at 14 09 23](https://github.com/osbkin/Technologies/assets/94690103/5f21e88c-a6b7-463a-b251-5412219e3f2f)
+
+
+
+
